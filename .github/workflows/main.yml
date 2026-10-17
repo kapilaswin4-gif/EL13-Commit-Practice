@@ -1,6 +1,6 @@
 name: EL14 Basic Workflow
 
-on:
+‘on’:
 push:
 branches:
 - main
@@ -8,10 +8,10 @@ branches:
 jobs:
 test:
 runs-on: ubuntu-latest
-
 steps:
-  - name: Checkout repository
-    uses: actions/checkout@v4
+- name: Checkout repository
+uses: actions/checkout@v4
+
   - name: Display success message
     run: echo "GitHub Actions workflow is running successfully!"
   - name: Show repository files
